@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UniCon</title>
+  <meta charset="utf-8">
+  <meta name="description" content="UniCon">
+  <meta name="author" content="sivarome">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="http://slidifylibraries2.googlecode.com/git/inst/libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="http://slidifylibraries2.googlecode.com/git/inst/libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/js/slides" 
+    src="http://slidifylibraries2.googlecode.com/git/inst/libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>UniCon</h1>
+    <h2>A Universal Converter</h2>
+    <p>sivarome<br/>Data Scientist</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Across the globe there are several standards to measure Metrics</li>
+<li>Often we face challenges while converting Metrics from one standard to the other</li>
+<li>We use Google or Bing to search for a conversion tool, and will try 2 or 3 links until we find a good tool</li>
+<li>What if we have a universal converter with simple UI (and no Ads!) that can convert wide range of metrics with simple click of a button..</li>
+</ul>
+
+<p>The answer is &quot;UniCon&quot;.  Following are some of its features:</p>
+
+<ul>
+<li>Browser based application</li>
+<li>Simple UI</li>
+<li>Self-intuitive instructions</li>
+<li>Quick response</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>How it works</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>The application is built entirely using R programming and is hosted on Shiny server.  R is a powerful programming tool commonly used by the statisticians and data scientists.<br></li>
+<li>This Shiny application has a simple UI and Server components. 
+
+<ul>
+<li>The UI component is where the user input is captured and the response is shown to the user.</li>
+<li>The Server component contains the actual conversion formula.</li>
+</ul></li>
+</ul>
+
+<p>Example: 
+Below is the R code used for converting Fahrenfeit to Celcius:</p>
+
+<pre><code class="r">Fahrenheit &lt;-  98.4
+Celcius &lt;- ((Fahrenheit - 32)/9)*5
+print(Celcius)
+</code></pre>
+
+<pre><code>## [1] 36.88889
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>How to use the application</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>It is very easy to use this application. </p>
+
+<p>Use below link to launch the application:
+<a href="https://sivarome.shinyapps.io/UniCon">https://sivarome.shinyapps.io/UniCon</a>  </p>
+
+<p>Follow the simple steps listed below:</p>
+
+<ul>
+<li>Select your choice of conversion</li>
+<li>Enter a value to convert</li>
+<li>Click on Convert button</li>
+</ul>
+
+<p>Tadaa, you have a Universal converter in hand !</p>
+
+<p>Useful tip:
+Open this application on your phone browser and bookmark the page. Now you can easily access the application whenever you go.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Scope</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Current version supports following conversions only:  </p>
+
+<ul>
+<li>Fahrenheit (F) to Celcius (C)</li>
+<li>Celcius (C) to Fahrenheit (F)</li>
+<li>Kilograms (kgs) to Pounds (lbs)</li>
+<li>Pounds (lbs) to Kilograms (kgs)</li>
+<li>Milliliters (mL) to Ounces (ozs)</li>
+<li>Ounces (ozs) to Milliliters (mL)</li>
+<li>Kilometers (km) to Miles (miles)</li>
+<li>Miles (miles) to Kilometers (km)</li>
+</ul>
+
+<p>In future versions more functionality will be added.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='How it works'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How to use the application'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Scope'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="http://slidifylibraries2.googlecode.com/git/inst/libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
